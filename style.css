@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #155d99, #1f9407);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-weight: bold;
+}
+
+.imgLogo {
+    border-radius: 100%;
+    width: 500px;
+    height: 300px;
+}
+
+.hero-img-cachorro {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 500px;
+}
+
+.hero-img-gato {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 500px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #147e1d;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #5eff6c;
+    color: white;
+}
+
+.sobre .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.indicadores {
+    display: flex;
+    gap: 20px;
+}
+
+.servicos {
+    padding: 60px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.img-box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: #eee;
+    border-radius: 10px;
+}
+
+.contato {
+    padding: 60px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+button {
+    padding: 12px;
+    background: #ff5e62;
+    color: white;
+    border: none;
+}
