@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Hotel & PetShop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
     <header class="hero">
@@ -13,43 +13,55 @@
             <img src="imagens/Logo fundo transparente.png" class="imgLogo" alt="logo da PetShop e Hotel 4patas">
             <h1>Seu pet merece o melhor cuidado</h1>
             <p>Hospedagem, Banho, tosa e consultas. </p>
-            <a href="#contato" class="btn">Agendar Agora</a>
+            <a href="#indicadores" class="btn">Conheça nossos serviços!</a>
         </div>
         <img src="imagens/golden.png" class="hero-img-cachorro" alt="Imagem de um cachorro da raça golden retriever">
-        <img src="imagens/gato.png" class="hero-img-gato" alt="Imagem de um gato">
     </header>
-    <section class="sobre">
-        <div class="container">
-            <div class="sobre-text">
-                <h2>Sobre Nós</h2>
-                <p>Somos apaixonados por animais e cuidamos do seu pet como se fosse nosso.</p>
-            </div>
-        </div>
+    <section class="indicadores" id="indicadores">
+        <p>+7.000 animas já passaram pela gente</p>
+        <p>Monitoramento 24h</p>
+        <p>Equipe treinada e certificada</p>
+        <p>Áreas separadas por porte</p>
+        <p>Recreação supervisionada</p>
     </section>
-    <section class="servicos">
+    <section class="servicos" id="servicos">
         <h2>Nossos Serviços</h2>
         <div class="cards">
             <div class="card">
-                <div class="img-box"></div>
+                <div class="img-box">
+                    <img src="imagens/banho.jpg" alt="imagem de animais tomando banho.">
+                </div>
                 <h3>Banho & Tosa</h3>
                 <p>Cuidado completo para seu pet.</p>
             </div>
-
             <div class="card">
-                <div class="img-box"></div>
+                <div class="img-box">
+                    <img src="imagens/veterinario.png" alt="imagem de um veterinario checando um cachorro.">
+                </div>
                 <h3>Consultas</h3>
                 <p>Atendimento veterinário especializado.</p>
             </div>
-
             <div class="card">
-                <div class="img-box"></div>
+                <div class="img-box">
+                    <img src="imagens/produtos.jpg" alt="imagem de produtos de cuidado animal.">
+                </div>
                 <h3>Produtos</h3>
                 <p>Rações, brinquedos e acessórios.</p>
             </div>
             <div class="card">
-                <div class="img-box"></div>
+                <div class="img-box">
+                    <img src="imagens/parque-hospedagem.jpg" alt="imagem de um parque para animais.">
+                </div>
                 <h3>Hospedagem</h3>
-                <p>Flexiveis para a necessidade do seu pet.</p>
+                <p>Flexiveis para as necessidades do seu pet.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sobre">
+        <div class="container">
+            <div class="sobre-texto">
+                <h2>Sobre Nós</h2>
+                <p>Somos apaixonados por animais e cuidamos do seu pet como se fosse nosso, buscamos os melhores produtos e tratamentos para o seu pet, atendendo totalmente as necessidades de nossos queridos companheiros.</p>
             </div>
         </div>
     </section>
@@ -58,8 +70,8 @@
             <h2>Fale Conosco</h2>
             <form id="form">
                 <input type="text" id="nome" placeholder="Seu nome" required>
-                <input type="email" id="email" placeholder="Seu email" required>
-                <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+                <input type="tel" id="tel" placeholder="Seu melhor número" required>
+                <textarea id="mensagem" placeholder="Diga sobre seu querido companheiro, como: Raça, Porte, Cuidados especiais e o serviço que deseja." required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>

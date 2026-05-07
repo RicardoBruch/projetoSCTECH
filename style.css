@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +15,12 @@ body {
 
 .hero {
     position: relative;
-    height: 100vh;
-    background: linear-gradient(135deg, #155d99, #1f9407);
     display: flex;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .hero-content {
@@ -29,11 +31,6 @@ body {
     font-weight: bold;
 }
 
-.imgLogo {
-    width: 500px;
-    height: 300px;
-}
-
 .hero-img-cachorro {
     position: absolute;
     bottom: 0;
@@ -41,37 +38,51 @@ body {
     width: 500px;
 }
 
-.hero-img-gato {
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    width: 500px;
-}
-
 .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background: white;
-    color: #147e1d;
+    background: rgba(101, 117, 255, 0.575);
+    color: #000000;
     border-radius: 30px;
     text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #5eff6c;
+    background-color: #0011ff4f;
     color: white;
-}
-
-.sobre .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px;
 }
 
 .indicadores {
     display: flex;
     gap: 20px;
+
+}
+
+.indicadores p {
+    background-color: #1f2bce6b;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sobre {
+    display: flex;
+    padding: 50px;
+    width: 100vw;
+    background-color: rgba(187, 187, 187, 0.644);
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+}
+
+.container h2 {
+    text-align: center;
 }
 
 .servicos {
@@ -95,8 +106,15 @@ body {
 .img-box {
     width: 100%;
     aspect-ratio: 1/1;
-    background: #eee;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .contato {
@@ -112,7 +130,8 @@ form {
     margin: auto;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 10px;
 }
 
@@ -123,14 +142,15 @@ button {
     border: none;
     border-radius: 10px;
     box-shadow: 5px black;
+    cursor: pointer;
 }
 
 button:hover {
     color: #ff5e62;
-    background: white;
+    background: rgb(255, 130, 130);
 }
 
-#rodape { 
+#rodape {
     background-color: black;
     color: white;
     text-align: center;
